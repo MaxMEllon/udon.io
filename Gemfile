@@ -46,6 +46,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'dotenv-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
+gem 'mini_racer', platforms: :ruby
 gem 'puma', '~> 3.0'
 gem 'react_on_rails'
 gem 'sass-rails', '~> 5.0'
