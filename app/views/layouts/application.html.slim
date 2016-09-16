@@ -7,4 +7,31 @@ html
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
-    = yield
+    nav.navbar.navbar-default.navbar-static-top
+      .container-fluid
+        .navbar-header
+          button.collapsed.navbar-toggle type="button"
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand href="#"
+            | Udon.io
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              a href="#"
+                | 店一覧
+            li
+              a href="#"
+                | TODO
+            li
+              a href="#"
+                | TODO
+    .row
+      .col-md-1
+      .col-md-10
+        .main
+          = yield
+      .col-md-1
+
+    footer.footer

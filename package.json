@@ -4,5 +4,8 @@
   "scripts": {
     "postinstall": "cd client && npm install",
     "test": "rspec"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7"
   }
 }
