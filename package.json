@@ -6,6 +6,7 @@
     "test": "rspec"
   },
   "devDependencies": {
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "lodash": "^4.15.0"
   }
 }

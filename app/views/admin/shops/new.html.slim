@@ -1,0 +1,55 @@
+.row
+  .col-md-6
+    .map-embed
+      .map-canvas#map-canvas
+
+  .col-md-1
+  .col-md-5
+      = form_for @shop, url: {action: :create} do |f|
+        .shop-form
+          .input-group
+            span.input-group-addon#shop-name-addon
+              = fa_icon 'user'
+            = f.text_field \
+              :name, 'aria-describedby' => 'shop-name-addon', \
+              class: 'form-control', placeholder: '店名'
+
+        br
+        .input-group
+          span.input-group-addon#shop-latitude-addon
+            = fa_icon 'user'
+          = f.text_field \
+            :latitude, 'aria-describedby' => 'shop-latitude-addon', \
+            class: 'form-control', placeholder: '緯度'
+        br
+        .input-group
+          span.input-group-addon#shop-longitude-addon
+            = fa_icon 'user'
+          = f.text_field \
+            :latitude, 'aria-describedby' => 'shop-longitude-addon', \
+            class: 'form-control', placeholder: '経度'
+
+        br
+        .input-group
+          span.input-group-addon#shop-parking-addon
+            = fa_icon 'user'
+          = f.text_field \
+            :latitude, 'aria-describedby' => 'shop-parking-addon', \
+            class: 'form-control', placeholder: 'ガレージ (省略可能)'
+
+        br
+        .input-group
+          span.input-group-addon#shop-shoptype-addon
+            = fa_icon 'user'
+          = f.text_field \
+            :latitude, 'aria-describedby' => 'shop-shoptype-addon', \
+            class: 'form-control', placeholder: '店舗種類'
+
+        br
+        button.btn.btn-primary type="submit" style="float: right;"
+          = fa_icon 'save'
+          | 保存
+
+javascript:
+  var shop = new Shop('map-canvas');
+  window.shop = shop;
