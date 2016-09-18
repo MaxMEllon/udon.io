@@ -56,3 +56,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'uglifier', '>= 1.3.0'
 gem 'sprockets-es6'
 gem 'font-awesome-rails'
+gem 'active_model_serializers'
