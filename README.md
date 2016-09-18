@@ -1,24 +1,32 @@
-# README
+# うどん口コミサイト（になる予定）
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Deveopment
+---
 
-Things you may want to cover:
+1. clone this repository
+1. `mysql.server start` or `sudo service mysql start`
+1. `bundle install`
+1. `npm install`
+1. `bundle exec rake db:create`
+1. `bundle exec rake db:migrate`
+1. `bundle exec foreman start -f Procfile`
 
-* Ruby version
+Running webpack dev server and rails server.
 
-* System dependencies
+Access to `localhost:3000`
 
-* Configuration
+Environment
+---
 
-* Database creation
+* frontend
+  * `react` ~> 15.0
+  * `node` ~> 6.6.0
 
-* Database initialization
+* backend
+  * `ruby` ~> 2.3.1
+  * `rails` ~> 5.0
+  * `mysql` ~> 14.14
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+LISENCE
+---
+* MIT : MaxMEllon (Kento TSUJI) `<maxmellon1994@gmail.com>`
