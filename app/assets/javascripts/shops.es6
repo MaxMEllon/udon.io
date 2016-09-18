@@ -1,9 +1,11 @@
 class Shop {
   constructor(mapDomId, position) {
     Utils.autoBind(this);
-    this.mapDomId = mapDomId;
     this.position = position;
-    google.maps.event.addDomListener(window, 'load', this.render);
+    _.delay(() => {
+      this.canvas = document.getElementById(mapDomId);
+      if (!_.isNull(this.canvas)) this.render();
+    }, 100);
   }
 
   getPosition() {
@@ -20,15 +22,12 @@ class Shop {
   }
 
   render() {
-    this.canvas = document.getElementById(this.mapDomId);
     const center = new google.maps.LatLng(this.position.lat, this.position.lng);
     this.mapOptions = {
       center,
-      zoom: 15,
+      zoom: 6,
     };
     this.map = new google.maps.Map(this.canvas, this.mapOptions);
   }
 }
-
-window.Shop = Shop;
 

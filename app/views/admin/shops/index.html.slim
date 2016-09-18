@@ -1,2 +1,30 @@
 h1
-  = '店一覧'
+  | 店一覧
+  = link_to '店舗を新規登録する', new_admin_shop_path, \
+    class: 'btn btn-success shop-new-btn'
+hr
+table.table
+  thead
+    tr
+      th = '#'
+      th = '名前'
+      th = '緯度'
+      th = '経度'
+      th = 'ガレージ'
+      th = '店の種類'
+      th = '操作'
+
+  - @shops.each do |shop|
+    tbody
+      tr
+        td = shop.id
+        td = shop.name
+        td = shop.latitude
+        td = shop.longitude
+        td = shop.parking
+        td = shop.shop_type
+        td
+          = link_to '詳細', '#', class: 'btn btn-info'
+          = link_to '編集', '#', class: 'btn btn-success'
+          = link_to '削除', '#', class: 'btn btn-danger'
+
