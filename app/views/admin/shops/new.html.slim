@@ -51,5 +51,11 @@
           | 保存
 
 javascript:
-  var shop = new Shop('map-canvas');
-  window.shop = shop;
+  'use strict';
+
+  var position = {
+    lat: 35.792621, 
+    lng: 139.806513,
+  };
+
+  var shop = new Shop('map-canvas', position);
