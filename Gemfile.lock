@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/anhtrantuan/swagger-docs.git
+  revision: 98d69bfeace76aadd6276a1c0e3190085ab25b32
+  specs:
+    swagger-docs (0.2.8)
+      activesupport (>= 3)
+      rails (>= 3)
+
+GIT
   remote: https://github.com/seuros/capistrano-puma
   revision: 6a0c77336f07bdba64eb43fc16319b2460be252e
   specs:
@@ -369,6 +377,7 @@ DEPENDENCIES
   spring-commands-rspec
   spring-watcher-listen (~> 2.0.0)
   sprockets-es6
+  swagger-docs!
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)

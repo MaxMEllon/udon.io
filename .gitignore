@@ -21,3 +21,7 @@ node_modules
 
 # Generated js bundles
 /app/assets/webpack/*
+
+# Swagger
+/public/*.json
+
