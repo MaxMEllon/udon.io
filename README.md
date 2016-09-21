@@ -27,6 +27,12 @@ Environment
   * `rails` ~> 5.0
   * `mysql` ~> 14.14
 
+API Document
+---
+
+- Boot up rails server.
+- Please accses to `http://localhost:3000/api`
+
 LISENCE
 ---
 * MIT : MaxMEllon (Kento TSUJI) `<maxmellon1994@gmail.com>`
