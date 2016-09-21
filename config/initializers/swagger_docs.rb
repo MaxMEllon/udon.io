@@ -4,8 +4,7 @@ Swagger::Docs::Config.register_apis({
     controller_base_path: '/api',
     api_file_path: 'public',
     base_api_controllers: [ApiController],
-    parent_controller: ActionController::API,
-    api_extension_type: :json
+    parent_controller: ActionController::API
   }
 })
 
