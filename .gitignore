@@ -24,4 +24,5 @@ node_modules
 
 # Swagger
 /public/*.json
+/public/api
 
