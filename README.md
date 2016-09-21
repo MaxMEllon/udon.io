@@ -13,7 +13,7 @@ Deveopment
 
 Running webpack dev server and rails server.
 
-Access to `localhost:3000`
+Access to `http://localhost:3000`
 
 Environment
 ---
@@ -30,7 +30,8 @@ Environment
 API Document
 ---
 
-- Boot up rails server.
+- `bundle exec rake swagger:docs` : Generate mock api and document data.
+- `bundle exec rails server -p 3000` : Boot up server.
 - Please accses to `http://localhost:3000/api`
 
 LISENCE
