@@ -1,0 +1,73 @@
+{
+  "apiVersion": "1.0",
+  "swaggerVersion": "1.2",
+  "basePath": "http://localhost:3000/api",
+  "resourcePath": "shops",
+  "apis": [
+    {
+      "path": "/shops.json",
+      "operations": [
+        {
+          "summary": "Fetches all shops",
+          "responseMessages": [
+            {
+              "code": 200,
+              "responseModel": [
+                "Shop"
+              ],
+              "message": "Success"
+            },
+            {
+              "code": 401,
+              "responseModel": null,
+              "message": "Unauthorized"
+            },
+            {
+              "code": 406,
+              "responseModel": null,
+              "message": "Not Acceptable"
+            }
+          ],
+          "nickname": "Api::Shops#index",
+          "method": "get"
+        }
+      ]
+    }
+  ],
+  "authorizations": null,
+  "models": {
+    "Shop": {
+      "id": "Shop",
+      "required": [
+        "id",
+        "name",
+        "latitude",
+        "longitude",
+        "shop_type"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "description": "Shop Id"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name"
+        },
+        "latitude": {
+          "type": "string",
+          "description": "lat"
+        },
+        "longitude": {
+          "type": "string",
+          "description": "lot"
+        },
+        "shopType": {
+          "type": "string",
+          "description": "Type"
+        }
+      },
+      "description": "A Shop object"
+    }
+  }
+}

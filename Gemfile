@@ -42,6 +42,7 @@ group :test do
   gem 'rails-controller-testing'
 end
 
+gem 'swagger-docs', github: 'anhtrantuan/swagger-docs'
 gem 'coffee-rails', '~> 4.2'
 gem 'dotenv-rails'
 gem 'jbuilder', '~> 2.5'
