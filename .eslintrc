@@ -1,0 +1,29 @@
+---
+extends: airbnb
+parser: babel-eslint
+
+env:
+  es6: true
+  node: true
+
+globals:
+  window: false
+  document: false
+  _: false
+
+rules:
+  arrow-body-style: [1]
+  no-mixed-operators: [0]
+  no-warning-comments: [1]
+  prefer-stateless-function: [0]
+  react/jsx-filename-extension: [0]
+  class-methods-use-this: [0]
+  react/jsx-no-bind: [1]
+  react/prefer-stateless-function: [1]
+  react/prop-types: [0]
+  react/no-string-refs: [1] # TODO
+  global-require: [1]
+  import/no-extraneous-dependencies: [0] # TODO
+  jsx-a11y/no-static-element-interactions: [0]
+  import/newline-after-import: [0]
+  no-return-assign: [0]
