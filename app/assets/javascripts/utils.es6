@@ -1,8 +1,8 @@
 class Utils {
-  static autoBind(self) {
-    _.forEach(Object.getOwnPropertyNames(self.__proto__), key => {
-      if (key !== 'constructor' && _.isFunction(self[key])) {
-        self[key] = self[key].bind(self);
+  static autoBind(arg) {
+    _.forEach(Object.getOwnPropertyNames(Object.getPrototypeOf(arg)), key => {
+      if (key !== 'constructor' && _.isFunction(arg[key])) {
+        arg[key] = arg[key].bind(arg);
       }
     });
   }
