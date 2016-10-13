@@ -14,7 +14,7 @@ class Shop {
     return {
       lat: center.lat(),
       lng: center.lng(),
-    }
+    };
   }
 
   getMap() {
@@ -31,3 +31,4 @@ class Shop {
   }
 }
 
+window.Shop = Shop;
